@@ -1,25 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import Header1 from "./Components/header";
+import SideTab from "./Components/sideTab";
+import NewProject from "./Components/newProject"
+import { createBrowserRouter, Outlet } from "react-router-dom";
+import Forums from "./Components/forums";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+const App= ()=>{ 
+
+
+// const [projectLogin, setProjectLogin]= useState(true);
+
+// function projectChange(){
+//   setProjectLogin(!projectLogin);
+  
+// }
+// function manageProjectChange(){
+//   if(projectLogin){
+//     return <NewProject/>
+//   }
+// }
+
+
+
+
+
+  return(
+<>
+  <Header1/>
+  <Outlet/>
+{/* {manageProjectChange()} */}
+
+</>
+  
+  )
 }
 
-export default App;
+const appRouter= createBrowserRouter(
+  [
+    {
+      path:"/",
+      element:<App/>,
+      children:[
+        {
+            
+            path:"/",
+            element:<SideTab />
+        },
+      {
+        path:"/newProject",
+        element:<NewProject/>
+      },
+      {
+        path:"/forums",
+        element:<Forums/>
+      }
+      ]
+    }
+  ]
+)
+
+export default appRouter;
