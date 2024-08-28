@@ -1,15 +1,29 @@
 import { Form } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { addItem } from "../Utilities/projectDataSlice";
 
 const NewProject = () => {
+let formDataObj;
+let count=0;
   const handleForm = (event) => {
     event.preventDefault();
     let form= event.target;
     let formData= new FormData(form);
-    let formDataObj= Object.fromEntries(formData.entries());
+    formDataObj= Object.fromEntries(formData.entries());
     let formJSON= JSON.stringify(formDataObj);
-    console.log(formDataObj);
-    console.log(formJSON);
+    // console.log(formDataObj);
+    // console.log(formJSON);
+    handleAddProject();
   };
+
+const dispatch = useDispatch();
+const handleAddProject=()=>{
+    console.log(formDataObj);
+  formDataObj.id=count;
+  count++;
+  console.log(formDataObj);
+    dispatch(addItem(formDataObj))
+}
 
 
   return (
@@ -56,7 +70,7 @@ const NewProject = () => {
         <br />
         <label>
           Official allotment of Tender :
-          <input name="tenderLetter" type="file" id="myFile" name="filename" />
+          <input name="tenderLetter" type="file" id="myFile" />
         </label>
         <br />
         <input name="submit" type="submit" />

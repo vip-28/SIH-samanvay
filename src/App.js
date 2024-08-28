@@ -3,6 +3,9 @@ import SideTab from "./Components/sideTab";
 import NewProject from "./Components/newProject"
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Forums from "./Components/forums";
+import { Provider } from "react-redux";
+import store from "./Utilities/store";
+import ProjectPage from "./Components/projectPage";
 
 
 
@@ -29,9 +32,11 @@ const App= ()=>{
 
   return(
 <>
+<Provider store={store}>
   <Header1/>
   <Outlet/>
 {/* {manageProjectChange()} */}
+</Provider>
 
 </>
   
@@ -56,7 +61,11 @@ const appRouter= createBrowserRouter(
       {
         path:"/forums",
         element:<Forums/>
+      },{
+        path:"/project/:id",
+        element:<ProjectPage/>
       }
+
       ]
     }
   ]
