@@ -29,8 +29,8 @@ const SideTab = () => {
   return (
     <>
     
-      <div className="top-28 fixed h-full w-72 bg-slate-200 rounded-lg flex flex-col justify-center items-center gap-5 ">
-        <div className="  absolute top-32">
+      <div className="top-36 fixed h-full w-72 bg-slate-200 rounded-lg flex flex-col justify-center items-center gap-5 text-white ">
+        <div className="  absolute top-20">
           
 
 

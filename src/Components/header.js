@@ -8,12 +8,11 @@ const Header1 = () => {
       <div className="flex justify-between items-center pr-6 py-2 bg-green-200 font-semibold ">
         <div className="logo ">
           {" "}
-          <Link to="/">
           <div className="flex">
             <img src={corpLogo} alt="img" className="w-32 h-24" />
-            <div>Home</div>
+       
             </div>
-          </Link>
+         
         </div>
 
         <div className=" pl-12 text-4xl font-customFont text-indigo-700">Samanvay Portal</div>
@@ -22,6 +21,9 @@ const Header1 = () => {
         <div>Dummy Name</div>   
             <img src={anonymous} alt="img" className="h-14 bg-white rounded-full"/>
         </div>
+      </div>
+      <div className="h-8 w-full bg-red-200  z-40">
+      <div > <Link to="/"> <button className=" ml-[90px] rounded-lg px-3 py-1 bg-blue-600 text-white hover:bg-indigo-400 active:bg-indigo-200"> Home </button></Link></div>
       </div>
     </>
   );
