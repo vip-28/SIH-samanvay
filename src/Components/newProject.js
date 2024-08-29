@@ -19,7 +19,7 @@ let count=0;
 const dispatch = useDispatch();
 const handleAddProject=()=>{
     console.log(formDataObj);
-  formDataObj.id=count;
+  formDataObj.id=Math.floor(Math.random()*100000);
   count++;
   console.log(formDataObj);
     dispatch(addItem(formDataObj))
@@ -45,7 +45,7 @@ const handleAddProject=()=>{
         <label className=" ">
           Project Details:
           <br />
-          <textarea name="details" className="h-20"></textarea>
+          <textarea cols={25} name="details" className="h-20 w-5/6"></textarea>
         </label>
         <br />
         <label className="">

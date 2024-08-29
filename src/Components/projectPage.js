@@ -12,11 +12,12 @@ console.log(projectItems);
 
     const projects = projectItems.map((e, index)=>{
         if(id.id==e?.id){
+       
         return (
             <>
-           
+           {     console.log(Object.keys(e).length)}
             <div className=" gap-10 p-10">
-            <div>Id= {index}. </div>
+            <div>Id= {e?.id} </div>
             <div> department : {e?.department}</div>
             <div>Project Details: {e?.details}</div>
             <div>Start Date: {e?.startDate}</div>

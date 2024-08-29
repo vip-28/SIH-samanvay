@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import store from "./Utilities/store";
 import ProjectPage from "./Components/projectPage";
 import NewQuery from "./Components/newQuery";
+import QueryPage from "./Components/queryPage";
 
 
 
@@ -68,6 +69,9 @@ const appRouter= createBrowserRouter(
       },{
         path:"/newQuery",
         element:<NewQuery/>
+      },{
+        path:"/query/:id",
+        element:<QueryPage/>
       }
 
       ]
