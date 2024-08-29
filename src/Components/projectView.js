@@ -11,7 +11,7 @@ const ProjectView = () => {
     return (
         <>
        <Link to={`/project/${e?.id}`}>
-        <div className="flex justify-center">
+        <div className="grid grid-cols-7 gap-2">
         <div>S No. {e?.id} &nbsp;&nbsp;</div>
         <div> department : {e?.department}</div>
         <div>Project Details: {e?.details}</div>
@@ -28,7 +28,7 @@ const ProjectView = () => {
 
   return (
     <>
-      <div className=" top-48 left-80 absolute h-[400px] w-3/4 bg-slate-200 rounded-t-lg overflow-auto flex  ">
+      <div className=" top-48 left-80 absolute h-[400px] w-3/4 bg-slate-200 rounded-t-lg overflow auto-flex ">
         <div>{projects } </div>
     </div>
     </>
