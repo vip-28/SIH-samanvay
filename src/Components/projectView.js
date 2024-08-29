@@ -28,7 +28,7 @@ const ProjectView = () => {
 
   return (
     <>
-      <div className=" top-48 left-80 absolute h-[400px] w-3/4 bg-red-600 overflow-auto flex ">
+      <div className=" top-48 left-80 absolute h-[400px] w-3/4 bg-slate-200 rounded-t-lg overflow-auto flex  ">
         <div>{projects } </div>
     </div>
     </>

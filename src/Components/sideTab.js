@@ -29,7 +29,7 @@ const SideTab = () => {
   return (
     <>
     
-      <div className="top-28 fixed h-full w-72 bg-orange-500 flex flex-col justify-center items-center gap-5 ">
+      <div className="top-28 fixed h-full w-72 bg-slate-200 rounded-lg flex flex-col justify-center items-center gap-5 ">
         <div className="  absolute top-32">
           
 
@@ -38,7 +38,7 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <Link to="/newProject">
-              <button className="bg-purple-600 p-2 hover:bg-purple-400 active:bg-purple-200">
+              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
                 {" "}
                 Create Project{" "}
               </button>
@@ -48,7 +48,7 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <button
-              className="bg-purple-600 p-2 hover:bg-purple-400 active:bg-purple-200"
+              className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg"
               onClick={() => changeQuery()}
             >
               {" "}
@@ -58,7 +58,7 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <Link to="/forums">
-              <button className="bg-purple-600 p-2 hover:bg-purple-400 active:bg-purple-200">
+              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
                 {" "}
                 Forums{" "}
               </button>{" "}
@@ -67,7 +67,7 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <Link to="/newQuery">
-              <button className="bg-purple-600 p-2 hover:bg-purple-400 active:bg-purple-200">
+              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
                 {" "}
                 Create Query{" "}
               </button>{" "}
@@ -76,7 +76,7 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <Link to="/updateQuery">
-              <button className="bg-purple-600 p-2 hover:bg-purple-400 active:bg-purple-200">
+              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
                 {" "}
                 Update Query{" "}
               </button>{" "}
