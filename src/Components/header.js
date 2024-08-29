@@ -9,7 +9,7 @@ const Header1 = () => {
         <div className="logo ">
           {" "}
           <div className="flex">
-            <img src={corpLogo} alt="img" className="w-32 h-24" />
+            <img src={corpLogo} alt="img" className="w-32 h-24 md:w-32 h-25 lg:w-48 h-45" />
        
             </div>
          
@@ -18,8 +18,8 @@ const Header1 = () => {
         <div className=" pl-12 text-4xl font-customFont text-indigo-700">Samanvay Portal</div>
 
         <div className="flex items-center gap-2"> 
-        <div>Dummy Name</div>   
-            <img src={anonymous} alt="img" className="h-14 bg-white rounded-full"/>
+        <div class="font-sans font-medium">User x</div>   
+            <img src={anonymous} alt="img" className="h-14 md:h-18 lg:h-22 bg-white rounded-full"/>
         </div>
       </div>
       <div className="h-8 w-full bg-red-200  z-40">

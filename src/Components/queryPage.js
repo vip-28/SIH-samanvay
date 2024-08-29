@@ -17,6 +17,7 @@ const QueryPage = () => {
         return (
           <>
             <div> Department {index}: {e[`department${index}`]}</div>
+            
             <div>Deadline {index}: {e[`deadline${index}`]}</div>
                 <div>tenderLetter {index}: {e[`tenderLetter${index}`].name}</div>
                 <br/>
