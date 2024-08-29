@@ -9,7 +9,10 @@ const Header1 = () => {
         <div className="logo ">
           {" "}
           <Link to="/">
+          <div className="flex">
             <img src={corpLogo} alt="img" className="w-32 h-24" />
+            <div>Home</div>
+            </div>
           </Link>
         </div>
 

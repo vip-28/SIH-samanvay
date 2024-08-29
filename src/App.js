@@ -6,6 +6,7 @@ import Forums from "./Components/forums";
 import { Provider } from "react-redux";
 import store from "./Utilities/store";
 import ProjectPage from "./Components/projectPage";
+import NewQuery from "./Components/newQuery";
 
 
 
@@ -64,6 +65,9 @@ const appRouter= createBrowserRouter(
       },{
         path:"/project/:id",
         element:<ProjectPage/>
+      },{
+        path:"/newQuery",
+        element:<NewQuery/>
       }
 
       ]
