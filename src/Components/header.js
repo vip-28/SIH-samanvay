@@ -9,7 +9,7 @@ const Header1 = () => {
         <div className="logo ">
           {" "}
           <div className="flex">
-            <img src={corpLogo} alt="img" className="w-32 h-24 md:w-32 h-25 lg:w-48 h-45" />
+            <img src={corpLogo} alt="img" className="w-32 h-24 md:w-32 h-25 lg:w-40 h-45" />
        
             </div>
          
@@ -23,7 +23,12 @@ const Header1 = () => {
         </div>
       </div>
       <div className="h-8 w-full bg-red-200  z-40">
-      <div > <Link to="/"> <button className=" ml-[90px] rounded-lg px-3 py-1 bg-blue-600 text-white hover:bg-indigo-400 active:bg-indigo-200"> Home </button></Link></div>
+      <div class="inline-flex"> 
+        
+        <Link to="/"> <button className="ml-[90px] rounded-l-lg z-50 px-3 py-1 bg-indigo-600 text-white hover:bg-indigo-400 active:bg-indigo-200  h-8"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+        </button></Link>
+        <Link to="/"> <button className="h-8 mt-0 text-white rounded-r-lg pt-1 pb-3 px-3 pl-0 font-semibold bg-indigo-600 hover:bg-indigo-400 active:bg-indigo-200">Home</button></Link>
+      </div>
       </div>
     </>
   );
