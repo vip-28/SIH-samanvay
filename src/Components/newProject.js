@@ -45,11 +45,7 @@ const handleAddProject=()=>{
         <label className="">
           Project Details :
           <br />
-<<<<<<< HEAD
-          <textarea cols={25} name="details" className="h-20 w-5/6"></textarea>
-=======
           <textarea cols={125} name="details" className="resize-none rounded-md box-border h-20 w-full p-2 border-solid border-2 border-black"></textarea>
->>>>>>> cf1bc39b1481d5b5aae79f3bb506735ec2a40b44
         </label>
         <br />
         <label className="">

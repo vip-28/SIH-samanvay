@@ -46,6 +46,17 @@ function idGen(){
         <div>Query Creation ID: {a}</div>
         </label>
         <label>
+          <div className="flex items-center">
+          <div>Type of Query</div>
+          <select className="border-2 border-solid border-black m-1" name="queryType">
+          <option value="Select Type of Query">Select Type of Query</option>
+          <option value="Project Based">Project Based</option>
+                    <option value="Resources Based">Resources Based</option>
+                    <option value="Awareness Based">Awareness Based</option>
+          </select>
+          </div>
+        </label>
+        <label>
           <div>
             Location: <input name="location" className="border-2 border-solid border-black" type="text"></input>
           </div>

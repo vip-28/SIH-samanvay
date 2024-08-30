@@ -9,7 +9,7 @@ const QueryPage = () => {
   const queries = queryItems.map((e, index) => {
     if (id.id == e?.id) {
       let objLen = Object.keys(e).length;
-      objLen = objLen - 3;
+      objLen = objLen - 4;
       objLen = objLen / 3;
         const arr = new Array(objLen).fill(0);
 
@@ -17,7 +17,7 @@ const QueryPage = () => {
         return (
           <>
             <div> Department {index}: {e[`department${index}`]}</div>
-            
+
             <div>Deadline {index}: {e[`deadline${index}`]}</div>
                 <div>tenderLetter {index}: {e[`tenderLetter${index}`].name}</div>
                 <br/>
@@ -31,8 +31,10 @@ const QueryPage = () => {
           {/* // <div><pre>{JSON.stringify(e,null,2)}</pre></div> */}
           <div>
             <div>Query Id: {e?.id}</div>
+            <div>Query Type: {e?.queryType}</div>
             <div>Project Details: {e?.details}</div>
             <div>Location: {e?.location}</div>
+            
             {/* <div>{`Department${0}`}: {e[`department${0}`]} </div> */}
             <br />
             <br />
