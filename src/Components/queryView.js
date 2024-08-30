@@ -8,10 +8,10 @@ const QueryView = (props) => {
       <>
         <Link to={`/query/${e?.id}`}>
           <div className="grid grid-cols-[10%,20%,55%,15%]  border-solid  border-l-2 border-b-2 border-black overflow-auto">
-            <div className="overflow-hidden border-r-2 border-solid border-black h-16 flex justify-center items-center"> {e?.id}</div>
-            <div className="overflow-hidden border-r-2 border-solid border-black h-16 flex justify-center items-center">{e?.queryType}</div>
-            <div className="overflow-hidden border-r-2 border-solid border-black h-16 flex justify-center"> {e?.details}</div>
-            <div className="overflow-hidden border-r-2 border-solid border-black h-16 flex justify-center items-center">{e?.location}</div>
+            <div className="overflow-hidden border-r-2 pl-2 border-solid border-black h-16 flex justify-center items-center"> {e?.id}</div>
+            <div className="overflow-hidden border-r-2 pl-2 border-solid border-black h-16 flex justify-center items-center">{e?.queryType}</div>
+            <div className="overflow-hidden border-r-2 pl-2 border-solid border-black h-16 flex justify-center"> {e?.details}</div>
+            <div className="overflow-hidden border-r-2 pl-2 border-solid border-black h-16 flex justify-center items-center">{e?.location}</div>
           </div>
         </Link>
       </>
@@ -24,8 +24,9 @@ const QueryView = (props) => {
       <div>
         <div className="flex justify-center">
           <div className=" top-44 left-80 absolute h-96 w-3/4 bg-slate-200 z-10 ">
+          <div class="text-center font-sans font-bold text-indigo-600 pt-2 pb-2">Current Queries</div>
           <div className="grid grid-cols-[10%,20%,55%,15%]  rounded-md border-solid border-y-2 border-black overflow-auto">
-      <div className="border-r-2 border-l-2 pl-2 border-solid border-black"> S No. </div>
+      <div className="border-r-2 border-l-2 pl-2 border-solid border-black"> S.No. </div>
         <div className="border-r-2 pl-2 border-solid border-black"> Type of Query </div>
         <div className="border-r-2 pl-2 border-solid border-black  ">Project Details</div>
         <div className="border-r-2 pl-2 border-solid border-black  ">Location</div>

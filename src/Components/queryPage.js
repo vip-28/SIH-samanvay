@@ -16,10 +16,10 @@ const QueryPage = () => {
       const other1 = arr.map((f, index) => {
         return (
           <>
-            <div> Department {index}: {e[`department${index}`]}</div>
+            <div class="pb-2"> Department {index}: {e[`department${index}`]}</div>
             
-            <div>Deadline {index}: {e[`deadline${index}`]}</div>
-                <div>tenderLetter {index}: {e[`tenderLetter${index}`].name}</div>
+            <div class="py-2">Deadline {index}: {e[`deadline${index}`]}</div>
+                <div class="py-2">tenderLetter {index}: {e[`tenderLetter${index}`].name}</div>
                 <br/>
                 <br/>
           </>
@@ -29,10 +29,11 @@ const QueryPage = () => {
       return (
         <>
           {/* // <div><pre>{JSON.stringify(e,null,2)}</pre></div> */}
-          <div>
+          <form class="bg-slate-200 shadow-md rounded px-6 pt-8 pb-8 mb-4 max-w-md mx-auto">
+          <div class="text-lg font-semibold">
             <div>Query Id: {e?.id}</div>
-            <div>Project Details: {e?.details}</div>
-            <div>Location: {e?.location}</div>
+            <div class="h-60 py-3 overflow-y-scroll">Project Details: {e?.details}</div>
+            <div class="pt-4">Location: {e?.location}</div>
             {/* <div>{`Department${0}`}: {e[`department${0}`]} </div> */}
             <br />
             <br />
@@ -40,6 +41,7 @@ const QueryPage = () => {
             {other1}
             
           </div>
+          </form>
         </>
       );
     }
