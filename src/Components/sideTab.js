@@ -38,7 +38,7 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <Link to="/newProject">
-              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
+              <button className="bg-indigo-600 p-2 hover:bg-indigo-400 active:bg-indigo-200 rounded-lg">
                 {" "}
                 Create Project{" "}
               </button>
@@ -48,26 +48,18 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <button
-              className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg"
+              className="bg-indigo-600 p-2 hover:bg-indigo-400 active:bg-indigo-200 rounded-lg"
               onClick={() => changeQuery()}
             >
               {" "}
               Show Query{" "}
             </button>
           </div>
-          <div className=" m-5">
-            {" "}
-            <Link to="/forums">
-              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
-                {" "}
-                Forums{" "}
-              </button>{" "}
-            </Link>
-          </div>
+          
           <div className=" m-5">
             {" "}
             <Link to="/newQuery">
-              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
+              <button className="bg-indigo-600 p-2 hover:bg-indigo-400 active:bg-indigo-200 rounded-lg">
                 {" "}
                 Create Query{" "}
               </button>{" "}
@@ -76,9 +68,18 @@ const SideTab = () => {
           <div className=" m-5">
             {" "}
             <Link to="/updateQuery">
-              <button className="bg-blue-600 p-2 hover:bg-blue-400 active:bg-blue-300 rounded-lg">
+              <button className="bg-orange-600 p-2 hover:bg-orange-400 active:bg-orange-200 rounded-lg">
                 {" "}
                 Update Query{" "}
+              </button>{" "}
+            </Link>
+          </div>
+          <div className=" m-5">
+            {" "}
+            <Link to="/forums">
+              <button className="bg-orange-600 p-2 hover:bg-orange-400 active:bg-orange-200 rounded-lg">
+                {" "}
+                Forums{" "}
               </button>{" "}
             </Link>
           </div>
