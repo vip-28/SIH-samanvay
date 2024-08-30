@@ -16,7 +16,7 @@ console.log(projectItems);
         return (
             <>
            {     console.log(Object.keys(e).length)}
-           <form class="bg-slate-200 shadow-md rounded px-6 pt-8 pb-8 mb-4 max-w-md mx-auto">
+           <form class="bg-slate-200 shadow-md rounded px-6 pt-8 pb-8 mb-4 w-3/4 mx-auto">
             <div class="text-lg font-semibold">
             <div>ID = {e?.id} </div>
             <div class="py-3"> Department : {e?.department}</div>

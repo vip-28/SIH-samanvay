@@ -29,7 +29,7 @@ const ProjectView = () => {
   return (
     <>
       <div className=" top-48 left-80 absolute h-[400px] w-3/4 bg-slate-200 rounded-t-lg overflow-auto auto-flex border-[0.5px] border-black ">
-      <div class="text-center font-sans font-bold text-indigo-600 pt-2 pb-2">Onging Projects</div>
+      <div class="text-center font-sans font-bold text-indigo-600 pt-2 pb-2">Ongoing Projects</div>
       <div className="grid grid-cols-[5%,15%,30%,20%,10%,10%,10%]  border-solid border-y-2 border-b-2 border-black overflow-auto">
       <div className="border-r-2 pl-2 border-solid border-black"> S.No. </div>
         <div className="border-r-2 pl-2 border-solid border-black"> Department </div>
