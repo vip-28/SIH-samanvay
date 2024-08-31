@@ -10,6 +10,8 @@ To install react scripts, run following command
 To install redux, run following commands
 ### `npm i react-redux`
 ### `npm i @reduxjs/toolkit`
+
+### `To install React Router to enable App Routing`
 ### `npm i react-router-dom`
 
 
