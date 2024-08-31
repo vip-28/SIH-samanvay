@@ -8,6 +8,7 @@ import store from "./Utilities/store";
 import ProjectPage from "./Components/projectPage";
 import NewQuery from "./Components/newQuery";
 import QueryPage from "./Components/queryPage";
+import ErrorPage from "./Components/ErrorPage";
 
 
 
@@ -50,6 +51,7 @@ const appRouter= createBrowserRouter(
     {
       path:"/",
       element:<App/>,
+      errorElement:<ErrorPage/>,
       children:[
         {
             
