@@ -9,7 +9,7 @@ const QueryPage = () => {
   const queries = queryItems.map((e, index) => {
     if (id.id == e?.id) {
       let objLen = Object.keys(e).length;
-      objLen = objLen - 3;
+      objLen = objLen - 4;
       objLen = objLen / 3;
         const arr = new Array(objLen).fill(0);
 
@@ -35,6 +35,8 @@ const QueryPage = () => {
             <div>Query Id: {e?.id}</div>
             <div class="h-60 py-3 overflow-y-scroll">Project Details: {e?.details}</div>
             <div class="pt-4">Location: {e?.location}</div>
+            <div class="pt-4">Query Type: {e?.queryType}</div>
+
             {/* <div>{`Department${0}`}: {e[`department${0}`]} </div> */}
             <br />
             <br />

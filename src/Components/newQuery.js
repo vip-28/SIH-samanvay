@@ -51,6 +51,15 @@ function idGen(){
           </div>
         </label>
         <label>
+          <div>Select Query Type: <select name="queryType" className="p-1 mt-2 rounded-md border-2 border-solid border-black"> 
+            <option value="Select Query Type">Select Query Type</option>
+            <option value="Project Based Query">Project Based Query</option>
+            <option value="Resource Based Query">Resource Based Query</option>
+            <option value="Information Based Query">Information Based Query</option>
+
+            </select></div>
+        </label>
+        <label>
           <div>Project Details:</div>
           <textarea
           name="details"
