@@ -4,6 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+To install react scripts, run following command
+### `npx create-react-app`
+
+To install redux, run following commands
+### `npm i react-redux`
+### `npm i @reduxjs/toolkit`
+### `npm i react-router-dom`
+
+
 In the project directory, you can run:
 
 ### `npm start`
